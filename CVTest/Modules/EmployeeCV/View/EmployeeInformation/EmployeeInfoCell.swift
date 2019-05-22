@@ -9,20 +9,20 @@
 import UIKit
 
 class EmployeeInfoCell: UITableViewCell {
-
+    
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblValue: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
     func configureData(indexPath: IndexPath, info: EmployeeCVModel) {
         switch indexPath.section {
         case 0:
@@ -39,7 +39,7 @@ class EmployeeInfoCell: UITableViewCell {
             return
         }
     }
-
+    
     fileprivate func setupData(title: String, value: String) {
         lblTitle.text = title
         lblValue.text = value

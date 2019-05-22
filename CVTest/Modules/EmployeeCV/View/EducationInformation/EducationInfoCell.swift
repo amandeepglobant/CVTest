@@ -9,7 +9,7 @@
 import UIKit
 
 class EducationInfoCell: UITableViewCell {
-
+    
     @IBOutlet weak var lblCourse: UILabel!
     @IBOutlet weak var lblDuration: UILabel!
     @IBOutlet weak var lblCollege: UILabel!
@@ -17,13 +17,13 @@ class EducationInfoCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
     func configureData(educationInfo: EducationModel) {
         lblCourse.text = educationInfo.course
         lblDuration.text = educationInfo.duration

@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D3064C6822947AC700C80E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064C6722947AC700C80E3D /* AppDelegate.swift */; };
-		D3064C6A22947AC700C80E3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064C6922947AC700C80E3D /* ViewController.swift */; };
 		D3064C6D22947AC700C80E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3064C6B22947AC700C80E3D /* Main.storyboard */; };
 		D3064C6F22947ACA00C80E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3064C6E22947ACA00C80E3D /* Assets.xcassets */; };
 		D3064C7222947ACA00C80E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3064C7022947ACA00C80E3D /* LaunchScreen.storyboard */; };
 		D3064C7D22947ACB00C80E3D /* CVTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064C7C22947ACB00C80E3D /* CVTestTests.swift */; };
 		D3064C8822947ACB00C80E3D /* CVTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064C8722947ACB00C80E3D /* CVTestUITests.swift */; };
+		D3064C9E22947E1200C80E3D /* EmployeeCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064C9D22947E1200C80E3D /* EmployeeCVViewController.swift */; };
+		D3064CA12294837A00C80E3D /* EmployeeCVValid.json in Resources */ = {isa = PBXBuildFile; fileRef = D3064CA02294837A00C80E3D /* EmployeeCVValid.json */; };
+		D3064CA322948D4100C80E3D /* ServiceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CA222948D4100C80E3D /* ServiceCalls.swift */; };
+		D3064CA622948D8600C80E3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CA522948D8600C80E3D /* Constants.swift */; };
+		D3064CA822948DF300C80E3D /* EmployeeCVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CA722948DF300C80E3D /* EmployeeCVModel.swift */; };
+		D3064CAB2294A04200C80E3D /* CareerHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CAA2294A04200C80E3D /* CareerHistoryCell.swift */; };
+		D3064CAD2294ABF400C80E3D /* EmployeeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CAC2294ABF400C80E3D /* EmployeeInfoCell.swift */; };
+		D3064CB12294B7FC00C80E3D /* EducationInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CB02294B7FC00C80E3D /* EducationInfoCell.swift */; };
+		D3064CB62294CDCD00C80E3D /* CommonLogicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3064CB52294CDCD00C80E3D /* CommonLogicClass.swift */; };
+		D3064CBA2294DB7D00C80E3D /* EmployeeCVInvalid.json in Sources */ = {isa = PBXBuildFile; fileRef = D3064CB92294DB7D00C80E3D /* EmployeeCVInvalid.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		D3064C6422947AC700C80E3D /* CVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3064C6722947AC700C80E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3064C6922947AC700C80E3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3064C6C22947AC700C80E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3064C6E22947ACA00C80E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3064C7122947ACA00C80E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		D3064C8322947ACB00C80E3D /* CVTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3064C8722947ACB00C80E3D /* CVTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTestUITests.swift; sourceTree = "<group>"; };
 		D3064C8922947ACB00C80E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3064C9D22947E1200C80E3D /* EmployeeCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCVViewController.swift; sourceTree = "<group>"; };
+		D3064CA02294837A00C80E3D /* EmployeeCVValid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeCVValid.json; sourceTree = "<group>"; };
+		D3064CA222948D4100C80E3D /* ServiceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalls.swift; sourceTree = "<group>"; };
+		D3064CA522948D8600C80E3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D3064CA722948DF300C80E3D /* EmployeeCVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCVModel.swift; sourceTree = "<group>"; };
+		D3064CAA2294A04200C80E3D /* CareerHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerHistoryCell.swift; sourceTree = "<group>"; };
+		D3064CAC2294ABF400C80E3D /* EmployeeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoCell.swift; sourceTree = "<group>"; };
+		D3064CB02294B7FC00C80E3D /* EducationInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationInfoCell.swift; sourceTree = "<group>"; };
+		D3064CB52294CDCD00C80E3D /* CommonLogicClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLogicClass.swift; sourceTree = "<group>"; };
+		D3064CB92294DB7D00C80E3D /* EmployeeCVInvalid.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeCVInvalid.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +115,11 @@
 		D3064C6622947AC700C80E3D /* CVTest */ = {
 			isa = PBXGroup;
 			children = (
+				D3064CB42294CDAC00C80E3D /* CommonLogic */,
+				D3064CA422948D6B00C80E3D /* Helper */,
+				D3064C9A22947CE700C80E3D /* Utils */,
+				D3064C9522947C5200C80E3D /* Modules */,
 				D3064C6722947AC700C80E3D /* AppDelegate.swift */,
-				D3064C6922947AC700C80E3D /* ViewController.swift */,
-				D3064C6B22947AC700C80E3D /* Main.storyboard */,
 				D3064C6E22947ACA00C80E3D /* Assets.xcassets */,
 				D3064C7022947ACA00C80E3D /* LaunchScreen.storyboard */,
 				D3064C7322947ACA00C80E3D /* Info.plist */,
@@ -110,6 +130,7 @@
 		D3064C7B22947ACB00C80E3D /* CVTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				D3064C9F2294834500C80E3D /* Resources */,
 				D3064C7C22947ACB00C80E3D /* CVTestTests.swift */,
 				D3064C7E22947ACB00C80E3D /* Info.plist */,
 			);
@@ -123,6 +144,124 @@
 				D3064C8922947ACB00C80E3D /* Info.plist */,
 			);
 			path = CVTestUITests;
+			sourceTree = "<group>";
+		};
+		D3064C9522947C5200C80E3D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D3064C9622947C7100C80E3D /* EmployeeCV */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D3064C9622947C7100C80E3D /* EmployeeCV */ = {
+			isa = PBXGroup;
+			children = (
+				D3064C9922947CB500C80E3D /* Controller */,
+				D3064C9822947CAF00C80E3D /* View */,
+				D3064C9722947CAA00C80E3D /* Model */,
+			);
+			path = EmployeeCV;
+			sourceTree = "<group>";
+		};
+		D3064C9722947CAA00C80E3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CA722948DF300C80E3D /* EmployeeCVModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3064C9822947CAF00C80E3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CB32294C9DF00C80E3D /* EducationInformation */,
+				D3064CB22294C9CC00C80E3D /* EmployeeInformation */,
+				D3064CA922949FF300C80E3D /* CareerHistory */,
+				D3064C6B22947AC700C80E3D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3064C9922947CB500C80E3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3064C9D22947E1200C80E3D /* EmployeeCVViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D3064C9A22947CE700C80E3D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D3064C9B22947CF800C80E3D /* DataManagers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D3064C9B22947CF800C80E3D /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				D3064C9C22947D0600C80E3D /* API */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		D3064C9C22947D0600C80E3D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CA222948D4100C80E3D /* ServiceCalls.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D3064C9F2294834500C80E3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CA02294837A00C80E3D /* EmployeeCVValid.json */,
+				D3064CB92294DB7D00C80E3D /* EmployeeCVInvalid.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3064CA422948D6B00C80E3D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CA522948D8600C80E3D /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D3064CA922949FF300C80E3D /* CareerHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CAA2294A04200C80E3D /* CareerHistoryCell.swift */,
+			);
+			path = CareerHistory;
+			sourceTree = "<group>";
+		};
+		D3064CB22294C9CC00C80E3D /* EmployeeInformation */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CAC2294ABF400C80E3D /* EmployeeInfoCell.swift */,
+			);
+			path = EmployeeInformation;
+			sourceTree = "<group>";
+		};
+		D3064CB32294C9DF00C80E3D /* EducationInformation */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CB02294B7FC00C80E3D /* EducationInfoCell.swift */,
+			);
+			path = EducationInformation;
+			sourceTree = "<group>";
+		};
+		D3064CB42294CDAC00C80E3D /* CommonLogic */ = {
+			isa = PBXGroup;
+			children = (
+				D3064CB52294CDCD00C80E3D /* CommonLogicClass.swift */,
+			);
+			path = CommonLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3064CA12294837A00C80E3D /* EmployeeCVValid.json in Resources */,
 				D3064C7222947ACA00C80E3D /* LaunchScreen.storyboard in Resources */,
 				D3064C6F22947ACA00C80E3D /* Assets.xcassets in Resources */,
 				D3064C6D22947AC700C80E3D /* Main.storyboard in Resources */,
@@ -256,8 +396,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3064C6A22947AC700C80E3D /* ViewController.swift in Sources */,
+				D3064CAB2294A04200C80E3D /* CareerHistoryCell.swift in Sources */,
 				D3064C6822947AC700C80E3D /* AppDelegate.swift in Sources */,
+				D3064CB12294B7FC00C80E3D /* EducationInfoCell.swift in Sources */,
+				D3064C9E22947E1200C80E3D /* EmployeeCVViewController.swift in Sources */,
+				D3064CA322948D4100C80E3D /* ServiceCalls.swift in Sources */,
+				D3064CA622948D8600C80E3D /* Constants.swift in Sources */,
+				D3064CB62294CDCD00C80E3D /* CommonLogicClass.swift in Sources */,
+				D3064CA822948DF300C80E3D /* EmployeeCVModel.swift in Sources */,
+				D3064CAD2294ABF400C80E3D /* EmployeeInfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3064CBA2294DB7D00C80E3D /* EmployeeCVInvalid.json in Sources */,
 				D3064C7D22947ACB00C80E3D /* CVTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
