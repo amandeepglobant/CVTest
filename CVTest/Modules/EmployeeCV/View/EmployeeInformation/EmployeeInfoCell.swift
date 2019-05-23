@@ -12,6 +12,7 @@ class EmployeeInfoCell: UITableViewCell {
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblValue: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,6 +24,7 @@ class EmployeeInfoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // Method to setup data into the cell fields.
     func configureData(indexPath: IndexPath, info: EmployeeCVModel) {
         switch indexPath.section {
         case 0:

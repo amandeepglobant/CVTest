@@ -29,6 +29,8 @@ class CVTestUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    //MARK: Test methods
+    // Method to check tableview headers text
     func testHeaderTitle() {
         XCTAssertTrue(app.staticTexts["Employee name"].exists)
         XCTAssertTrue(app.staticTexts["Employee position"].exists)
@@ -39,6 +41,7 @@ class CVTestUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Education"].exists)
     }
     
+    // Method to test tableview's pull to refresh functionality
     func testPullToRefresh() {
         let firstCell = app.staticTexts["Employee name"]
         let start = firstCell.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
@@ -46,6 +49,7 @@ class CVTestUITests: XCTestCase {
         start.press(forDuration: 0.1, thenDragTo: finish)
     }
     
+    // Method to test tableview's number of sections
     func testNumberOfSections() {
         let numberOfCells = app.tables.cells.count
         XCTAssertEqual(numberOfCells, 13)

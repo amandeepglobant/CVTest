@@ -15,10 +15,11 @@ class CareerHistoryCell: UITableViewCell {
     @IBOutlet weak var lblDuration: UILabel!
     @IBOutlet weak var lblRole: UILabel!
     @IBOutlet weak var lblResponsibilities: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
+        // Code to customize imageview
         imageViewLogo.layer.cornerRadius = 5.0
         imageViewLogo.layer.masksToBounds = true
         imageViewLogo.layer.borderWidth = 1.0
@@ -31,9 +32,11 @@ class CareerHistoryCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // Method to setup data into the cell fields.
     func configureData(careerInfo: CareerHistoryModel) {
         CommonLogicClass.getCompanyLogo(companyName: careerInfo.companylogo ) { [weak self] (image) in
             DispatchQueue.main.async(execute: {
+                // Updating of downloaded image in main thread.
                 self?.imageViewLogo.image = image
             })
         }

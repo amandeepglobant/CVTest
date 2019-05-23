@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Model to hold EmployeeCV response.
 public struct EmployeeCVModel: Decodable {
     public let employeeName: String?
     public let position: String?
@@ -18,6 +19,7 @@ public struct EmployeeCVModel: Decodable {
     public let education: [EducationModel]?
 }
 
+// Model to hold Career History response.
 public struct CareerHistoryModel: Decodable {
     public let companylogo: String
     public let company: String
@@ -26,6 +28,7 @@ public struct CareerHistoryModel: Decodable {
     public let responsibilities: String
 }
 
+// Model to hold Education information response.
 public struct EducationModel: Decodable {
     public let course: String
     public let duration: String

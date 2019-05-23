@@ -10,6 +10,7 @@ import UIKit
 
 class CommonLogicClass: NSObject {
 
+    // Method to show title on empty table view.
     static func showEmptyTableViewLabel(size: CGSize, title: String) -> UIView {
         let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         emptyLabel.text = title
@@ -19,6 +20,7 @@ class CommonLogicClass: NSObject {
         return emptyLabel
     }
 
+    // Method to download image from the URL.
     static func getCompanyLogo(companyName: String, completion: @escaping (_ image: UIImage?) -> Void) {
         let url = URL(string: companyName)
         if let iconURL = url {

@@ -13,6 +13,7 @@ class EducationInfoCell: UITableViewCell {
     @IBOutlet weak var lblCourse: UILabel!
     @IBOutlet weak var lblDuration: UILabel!
     @IBOutlet weak var lblCollege: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +25,7 @@ class EducationInfoCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // Method to setup data into the cell fields.
     func configureData(educationInfo: EducationModel) {
         lblCourse.text = educationInfo.course
         lblDuration.text = educationInfo.duration

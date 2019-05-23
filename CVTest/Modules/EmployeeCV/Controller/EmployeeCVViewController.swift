@@ -9,31 +9,34 @@
 import UIKit
 
 class EmployeeCVViewController: UIViewController {
-    
+
     var empModel: EmployeeCVModel? = nil
     @IBOutlet weak var tableViewCV: UITableView!
-    
+
+    // lazy initialization of UIRefreshControl
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(EmployeeCVViewController.handleRefresh(_:)), for: .valueChanged)
         refreshControl.tintColor = UIColor.red
         return refreshControl
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Methods calling
         setupUI()
         serviceCallToGetEmployeeCV()
     }
-    
+
+    //MARK: Private methods
     fileprivate func setupUI() {
         // Set refresh control on tableview
         tableViewCV.tableFooterView = UIView()
         tableViewCV.addSubview(self.refreshControl)
     }
-    
+
+    // Method to make service call.
     fileprivate func serviceCallToGetEmployeeCV() {
         ServiceCalls.getEmployeeCVFromServer { [weak self]  (result) in
             self?.empModel = result
@@ -45,19 +48,21 @@ class EmployeeCVViewController: UIViewController {
             })
         }
     }
-    
+
+    // Handle pull to refresh event
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         serviceCallToGetEmployeeCV()
         refreshControl.endRefreshing()
     }
 }
 
+//MARK: UITableView Delegate and DataSource
 extension EmployeeCVViewController: UITableViewDelegate, UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return Constrants.SectionTitles[section]
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         if self.empModel == nil {
             let bgView = CommonLogicClass.showEmptyTableViewLabel(size: self.view.bounds.size, title: Constrants.EmptyTableView)
@@ -68,7 +73,7 @@ extension EmployeeCVViewController: UITableViewDelegate, UITableViewDataSource {
             return 7
         }
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0,1,2:
@@ -83,7 +88,7 @@ extension EmployeeCVViewController: UITableViewDelegate, UITableViewDataSource {
             return empModel?.education?.count ?? 0
         }
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0,1,2,3,4:
